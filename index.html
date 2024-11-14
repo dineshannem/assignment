@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alliance - Connect with Offerings and Needs</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Alliance</h1>
+        <p>Where your offerings and needs connect.</p>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About Alliance</h2>
+            <p>Alliance is a platform designed to help individuals and businesses connect by sharing their offerings and needs, leveraging advanced AI algorithms that facilitate meaningful connections.</p>
+        </section>
+
+        <section id="offerings">
+            <h2>Share Your Offerings</h2>
+            <form id="offeringsForm">
+                <input type="text" id="offerTitle" placeholder="Title of your offering" required>
+                <textarea id="offerDescription" placeholder="Describe your offering" required></textarea>
+                <input type="text" id="offerContact" placeholder="Your Contact Info" required>
+                <button type="submit">Submit Offering</button>
+            </form>
+        </section>
+
+        <section id="needs">
+            <h2>Share Your Needs</h2>
+            <form id="needsForm">
+                <input type="text" id="needTitle" placeholder="Title of your need" required>
+                <textarea id="needDescription" placeholder="Describe your need" required></textarea>
+                <input type="text" id="needContact" placeholder="Your Contact Info" required>
+                <button type="submit">Submit Need</button>
+            </form>
+        </section>
+
+        <section id="aiConnection">
+            <h2>How AI Can Help</h2>
+            <p>Using AI algorithms, we analyze the offerings and needs shared by our users to suggest meaningful connections, ensuring that everyone finds the right match to foster collaboration and growth.</p>
+        </section>
+    </main>
+
+    <script>
+        // Form submission handling
+        document.getElementById("offeringsForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            alert("Offering submitted!");
+        });
+
+        document.getElementById("needsForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            alert("Need submitted!");
+        });
+    </script>
+</body>
+</html>
